@@ -1,0 +1,159 @@
+/* 
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+
+    height: 100%;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
+  font-family:"Montserrat";
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*----------------------------------------------- */
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  text-align: center; 
+  height: 100vh;
+  background-color: rgb(215, 239, 135);
+}
+.container > h1{
+  margin-top: 10px;
+  margin-bottom: 100px;
+  font-size:3rem;
+
+  color: rgb(38, 38, 38);
+}
+.theGame {
+  display: grid;
+  grid-template-columns:repeat(3,1fr) ;
+  gap: 10px; 
+  margin-bottom: 10px; 
+  justify-content: center; 
+}
+.theGame button {
+  width: 170px;
+  height: 170px;
+  border: none;
+  border-radius: 20px;
+  background-color: gray; 
+  cursor: pointer;
+  /*text*/
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+} 
+ .theGame button:hover {
+  background-color: rgb(74, 74, 74);
+  color: white; 
+}
+.theGame button:active {
+  background-color: grey;
+  color: white; 
+}
+
+.play-button button{
+  height: 4vh;
+  margin-left: 20px;
+  width: 10vw;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  transform-origin: center center;
+
+  font-size: 1.2rem;
+}
+.play-button button:active {
+  transform: scale(0.99);
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 3px 15px 0px;
+
+}
+
+.player {
+  background-color: antiquewhite;
+  height: 100vh;  
+  padding-top: 20px;
+}
+
+.player  > h1{
+ color: rgb(38, 38, 38);
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dialog-form > input {
+  margin: 10px;
+  display: grid;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+form  div > button{
+  margin-top: 30px;
+}

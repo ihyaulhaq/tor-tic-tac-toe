@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js"></script>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="player 1">
+      <h1 class="player1H1">PLAYER 1</h1>
+      <div class="p1-result-message">
+        <h1></h1>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+      <div class="theGame">
+        <button></button><button></button><button></button><button></button
+        ><button></button><button></button><button></button><button></button
+        ><button></button>
+      </div>
+      <div class="play-button">
+        <button id="startBtn">start game</button>
+        <button id="resetBtn">reset game</button>
+      </div>
+    </div>
+    <div class="player 2">
+      <h1 class="player2H1">PLAYER 2</h1>
+      <div class="p2-result-message">
+        <h1></h1>
+      </div>
+    </div>
+    <dialog id="userInputDialog">
+      <form action="">
+        <div class="dialog-form">
+          <label for="player1Name">player 1 name's</label>
+          <input type="text" id="player1Name" value="player 1" />
+          <label for="player2Name">player 2 name's</label>
+          <input type="text" id="player2Name" value="player 2" />
+        </div>
+        <div class="">
+          <button value="cancel" formmethod="dialog" id="cancelBtn">
+            Cancel
+          </button>
+          <button id="submitBtn">Submit</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
